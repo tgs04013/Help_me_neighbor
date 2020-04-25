@@ -66,3 +66,10 @@ User Story를 바탕으로 Use Case를 발전시켰고, Work Plan 마무리.
 PPT 수정 및 발표 script 만들었다. 
 
 ![회의시간: 2시간 15분](0415.PNG)
+
+## 4월 21일 
+GitHub README.md를 만들었고, PyCharm에 대해 공부하였다. README.md파일을 PyCharm로
+수정하였다. 
+
+![PyCharm](Pycharm.PNG)
+![회의시간: 2시간 16분](0421.PNG)
