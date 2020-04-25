@@ -12,7 +12,12 @@ Web_Service / / team_project (Software Engineering)
 - [WORKPLAN](https://docs.google.com/spreadsheets/d/116JBGgYPy-1EQxnBNylSMEaAZSQbI69gt61lSLaQfGo/edit?usp=sharing)  
 - [회의록](meetings/Progress.md)
 
+<<<<<<< HEAD
+<<<<<<<<< Temporary merge branch 1
+
+
 ## 서비스 설명
 ![p2p](https://platum.kr/wp-content/uploads/2018/07/P2P_Lending-1440x901-1024x641.jpg)
 - 도움이 필요한 사람과 도움을 주는 사람을 연결해주는 웹 서비스
 -
+>>>>>>> upstream/master
