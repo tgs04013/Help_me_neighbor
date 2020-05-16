@@ -73,3 +73,12 @@ GitHub README.md를 만들었고, PyCharm에 대해 공부하였다. README.md�
 
 ![PyCharm](Pycharm.PNG)
 ![회의시간: 2시간 16분](0421.PNG)
+
+## 5월 17일 
+Class Diagram, Sequence Diagram, HTML, 5월 21일에 있을 발표를 위한 PPT를 만들었다.
+
+![Class Diagram 1](ClassDiagram1.PNG)
+![Class Diagram 2](ClassDiagram2.PNG)
+![Sequence Diagram ](SequenceDiagram.PNG)
+![0517 ppt](0517ppt.PNG)
+![회의시간: 2시간 40분](0517.PNG)
