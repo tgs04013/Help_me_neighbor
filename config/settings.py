@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'employer',
     'managing',
     'mypage',
+    'accounts',
 ]
 
 MIDDLEWARE = [
