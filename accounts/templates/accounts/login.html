@@ -3,8 +3,7 @@
 {% block contents %}
 <div class="container">
     <h1>login</h1>
-
-    <form methde="POST" action="{%url 'accounts:login_view'%">
+    <form method="POST" action="{% url 'accounts:login_view' %}">
         {% csrf_token %}
         Username:
         <br>
