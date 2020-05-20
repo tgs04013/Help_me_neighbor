@@ -90,6 +90,6 @@ Class Diagram을 수정하고, Pycharm을 이용하여 웹페이지 개발을 �
 ## 5월 19일
 Pycharm을 이용하여 웹페이지 개발을 하였고, 5월21일에 있을 발표를 위한 PPT 편집을 마무리 하였다. 
 ![post1](post1.png)
-![groupmeeting](groupmeeting.png)
-![PPT0520](PPT0520.png)
+![groupmeeting](groupmeeting.jpg)
+![PPT0520](PPT0520.JPG)
 
