@@ -82,3 +82,14 @@ Class Diagram, Sequence Diagram, HTML, 5월 21일에 있을 발표를 위한 PPT
 ![Sequence Diagram ](SequenceDiagram.png)
 ![0517 ppt](0517ppt.PNG)
 ![회의시간: 2시간 40분](0517.PNG)
+
+## 5월 18일
+Class Diagram을 수정하고, Pycharm을 이용하여 웹페이지 개발을 하였다.
+![Class Diagram 3](ClassDiagram3.png)
+
+## 5월 19일
+Pycharm을 이용하여 웹페이지 개발을 하였고, 5월21일에 있을 발표를 위한 PPT 편집을 마무리 하였다. 
+![post1](post1.png)
+![groupmeeting](groupmeeting.png)
+![PPT0520](PPT0520.png)
+
