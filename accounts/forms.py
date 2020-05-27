@@ -4,24 +4,24 @@ from django.utils.translation import ugettext_lazy as _
 from .models import UserManager, User
 
 class UserCreationForm(forms.ModelForm):
-    email = forms.EmailField(
-        label=_('Email'),
-        required=True,
-        widget=forms.EmailInput(
-            attrs={
-                'class': 'form-control',
-                'placeholder': _('Email address'),
-                'required': 'True',
-            }
-        )
-    )
-    nickname = forms.CharField(
-        label=_('Nickname'),
+    id = forms.CharField(
+        label=_('ID'),
         required=True,
         widget=forms.TextInput(
             attrs={
                 'class': 'form-control',
-                'placeholder': _('Nickname'),
+                'placeholder': _('ID'),
+                'required': 'True',
+            }
+        )
+    )
+    name = forms.CharField(
+        label=_('이름'),
+        required=True,
+        widget=forms.TextInput(
+            attrs={
+                'class': 'form-control',
+                'placeholder': _('홍길동'),
                 'required': 'True',
             }
         )
@@ -46,10 +46,32 @@ class UserCreationForm(forms.ModelForm):
             }
         )
     )
+    phnum = forms.CharField(
+        label=_('전화번호'),
+        required=True,
+        widget=forms.TextInput(
+            attrs={
+                'class': 'form-control',
+                'placeholder': _('010-1234-5678'),
+                'required': 'True',
+            }
+        )
+    )
+    civnum = forms.CharField(
+        label=_('주민등록번호'),
+        required=True,
+        widget=forms.TextInput(
+            attrs={
+                'class': 'form-control',
+                'placeholder': _('123456-1234567'),
+                'required': 'True',
+            }
+        )
+    )
 
     class Meta:
         model = User
-        fields = ('email', 'nickname')
+        fields = ('id', 'name','phnum','civnum')
 
     def clean_password2(self):
         password1 = self.cleaned_data.get("password1")
@@ -61,7 +83,7 @@ class UserCreationForm(forms.ModelForm):
     def save(self, commit=True):
         # Save the provided password in hashed format
         user = super(UserCreationForm, self).save(commit=False)
-        user.email = UserManager.normalize_email(self.cleaned_data['email'])
+        # user.set_id(self.cleaned_data['id'])
         user.set_password(self.cleaned_data["password1"])
         if commit:
             user.save()
@@ -75,7 +97,7 @@ class UserChangeForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ('email', 'password', 'is_active', 'is_superuser')
+        fields = ('id', 'password', 'is_active', 'is_superuser','phnum')
 
     def clean_password(self):
         return self.initial["password"]

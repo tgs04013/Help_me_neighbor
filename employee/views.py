@@ -23,3 +23,27 @@ def new_feed(request):
 def detail_feed(request, pk):
     article = Article.objects.get(pk=pk)
     return render(request, 'employee/detail_feed.html', {'feed': article})
+
+
+def remove_feed(request, pk):
+    article = Article.objects.get(pk=pk)
+
+    if request.method == 'POST':
+        if request.POST['password'] == article.password:
+            article.delete()
+            return redirect('/employee/')  # 첫페이지로 이동하기
+
+    return render(request, 'employee/remove_feed.html', {'feed': article})
+
+def edit_feed(request, pk):
+    article = Article.objects.get(pk=pk)
+
+    if request.method == 'POST':
+        if request.POST['password'] == article.password:
+            article.author = request.POST['author']
+            article.title = request.POST['title']
+            article.text = request.POST['content']
+            article.save()
+            return redirect(f'/employee/feed/{ article.pk }')
+
+    return render(request, 'employee/edit_feed.html', {'feed': article})

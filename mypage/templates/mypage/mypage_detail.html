@@ -5,9 +5,9 @@
     <h1>login</h1>
     <form method="POST" action="{% url 'accounts:login_view' %}">
         {% csrf_token %}
-        Username: {{ user.email }}
+        이름: {{ user.nickname }}
         <br>
-        Nickname: {{ user.nickname }}
+        이메일: {{ user.id }}
     </form>
 </div>
 {% endblock %}
