@@ -161,7 +161,7 @@ local_settings.py
 db.sqlite3
 .idea/
 <<<<<<< HEAD
-media/
+media
 
 accounts/__pycache__/admin.cpython-37.pyc
 accounts/__pycache__/models.cpython-37.pyc
