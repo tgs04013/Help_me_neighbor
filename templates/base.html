@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/owl-carousel.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/nice-select.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/menubar.css' %}">
 </head>
 <body>
     <!-- Preloader Starts -->
@@ -35,7 +36,11 @@
             <div class="row">
                 <div class="col-lg-2">
                     <div class="logo-area">
-                        <a href="{% url 'main:index' %}"><img src="{% static 'image/logo.png'%}" alt="logo"></a>
+                        <a href="{% url 'main:index' %}" class=inkfont><!--
+                            <img src="{% static 'image/logo.png'%}" alt="logo">
+                        -->
+                            Heros
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-10">
@@ -44,7 +49,7 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <div class="main-menu">
+                    <div class="main-menu" class=inkfont>
                         <ul>
                             <li><a href="{% url 'employer:employer_all' %}">구인</a></li>
                             <li><a href="{% url 'employee:employee_all' %}">구직</a></li>
