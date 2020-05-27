@@ -13,7 +13,7 @@ class UserManager(BaseUserManager):
             raise ValueError(_('Users must have an email address'))
 
         user = self.model(
-            email,
+            email=self.normalize_email(email),
             nickname=nickname,
         )
 
@@ -21,14 +21,16 @@ class UserManager(BaseUserManager):
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, email, nickname, password=None):
+    def create_superuser(self, email,  nickname, password=None):
         user = self.create_user(
-            email,
+
+            email=self.normalize_email(email),
             password=password,
             nickname=nickname,
         )
 
         user.is_superuser = True
+        user.is_admin = True
         user.save(using=self._db)
         return user
 
@@ -61,8 +63,8 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     objects = UserManager()
 
-    USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['nickname', ]
+    USERNAME_FIELD = 'nickname'
+    REQUIRED_FIELDS = ['email', ]
 
     class Meta:
         verbose_name = _('user')
