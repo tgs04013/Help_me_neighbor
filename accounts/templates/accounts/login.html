@@ -5,13 +5,7 @@
     <h1>login</h1>
     <form method="POST" action="{% url 'accounts:login_view' %}">
         {% csrf_token %}
-        Username:
-        <br>
-        <input name="username" type="text">
-        <br>
-         Password:
-        <br>
-        <input name="password" type="password">
+        {{ login_form }}
         <br><br>
         <input type="submit" class="btn btn-primary" value="login">
     </form>

@@ -67,12 +67,12 @@ PPT 수정 및 발표 script 만들었다.
 
 ![회의시간: 2시간 15분](0415.PNG)
 
-## 4월 21일 
+## 4월 17일 
 GitHub README.md를 만들었고, PyCharm에 대해 공부하였다. README.md파일을 PyCharm로
 수정하였다. 
 
 ![PyCharm](Pycharm.PNG)
-![회의시간: 2시간 16분](0421.PNG)
+![회의시간: 2시간 16분](0417.JPG)
 
 ## 5월 17일 
 Class Diagram, Sequence Diagram, HTML, 5월 21일에 있을 발표를 위한 PPT를 만들었다.
@@ -82,3 +82,14 @@ Class Diagram, Sequence Diagram, HTML, 5월 21일에 있을 발표를 위한 PPT
 ![Sequence Diagram ](SequenceDiagram.png)
 ![0517 ppt](0517ppt.PNG)
 ![회의시간: 2시간 40분](0517.PNG)
+
+## 5월 18일
+Class Diagram을 수정하고, Pycharm을 이용하여 웹페이지 개발을 하였다.
+![Class Diagram 3](ClassDiagram3.png)
+
+## 5월 19일
+Pycharm을 이용하여 웹페이지 개발을 하였고, 5월21일에 있을 발표를 위한 PPT 편집을 마무리 하였다. 
+![post1](post1.png)
+![groupmeeting](groupmeeting.jpg)
+![PPT0520](PPT0520.JPG)
+
