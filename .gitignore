@@ -161,3 +161,11 @@ local_settings.py
 db.sqlite3
 .idea/
 media/
+
+accounts/__pycache__/admin.cpython-37.pyc
+accounts/__pycache__/models.cpython-37.pyc
+accounts/__pycache__/views.cpython-37.pyc
+config/__pycache__/settings.cpython-37.pyc
+db.sqlite3
+mypage/__pycache__/views.cpython-37.pyc
+templates/base.html
