@@ -175,3 +175,4 @@ media/
 >>>>>>> upstream/master
 
 accounts/__pycache__/models.cpython-37.pyc
+*/__pycache__/*
